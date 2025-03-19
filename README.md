@@ -111,4 +111,4 @@ Al ejecutar el script se realizarán las siguientes acciones:
 
 ## Contribuciones
 
-Aunque es sencillo **extender** la funcionalidad del código preferiría que no hagan PRs agregando funciones, solo corrigiendo o mejorando mi código, este código está de un solo uso y no me interesa tener más funciones.
+Aunque es sencillo **extender** la funcionalidad del código preferiría que no hagan PRs agregando funciones, solo corrigiendo o mejorando el código, este código será de un solo uso así que realmente no me interesa tener más funciones.
