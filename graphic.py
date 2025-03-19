@@ -30,14 +30,11 @@ def graphic(arr1, arr2, color="mediumslateblue", save_path=None, ascii_output=Fa
     Crea un diagrama de dispersión comparando dos arreglos numéricos.
 
     Parámetros:
-      - arr1, arr2: Arreglos (listas o numpy arrays) a graficar.
+      - arr1: arreglo del eje X a graficar.
+      - arr2: arreglo del eje Y a graficar.
       - title: Título del gráfico.
       - save_path: Ruta para guardar la imagen (ej: 'grafico.png').
       - ascii_output: Si es True, muestra la salida en ASCII.
-      - **kwargs: Argumentos adicionales para personalización:
-          • color: Color de los puntos.
-          • xlabel, ylabel: Etiquetas de ejes.
-          • style: Estilo de matplotlib (ej: 'seaborn').
     """
     # Esta List Comprehension itera sobre ambos arreglos y verifica si alguno
     # no es un numpy array; en ese caso, lo convierte.

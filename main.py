@@ -8,14 +8,12 @@ arr1 = nparr([...])
 arr2 = nparr([...])
 
 # test values
-arr1 = nparr([10, 12, 8, 17, 10, 15, 10, 14, 19, 10, 11, 13, 16, 10, 12])
-arr2 = nparr([15, 17, 13, 23, 16, 21, 14, 20, 24, 17, 16, 18, 23, 15, 16])
-
-graphic(arr1, arr2)
-exit()
+# arr1 = nparr([10, 12, 8, 17, 10, 15, 10, 14, 19, 10, 11, 13, 16, 10, 12])
+# arr2 = nparr([15, 17, 13, 23, 16, 21, 14, 20, 24, 17, 16, 18, 23, 15, 16])
 
 value, p_vale = correlation(arr1, arr2)
 table("Pearson r value", value)
+graphic(arr1, arr2)
 
 # -----------------------------------------------------------
 # 1. Medir correlación lineal (datos que cumplen normalidad)
