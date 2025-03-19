@@ -66,5 +66,5 @@ def graphic(arr1, arr2, color="mediumslateblue", save_path=None, ascii_output=Fa
                 warnings.filterwarnings("error", category=UserWarning)
                 plt.show()
         except UserWarning as e:
-            print(f"Error al mostrar el gráfico con Matplotlib: {e}\n Intenando salida ASCII...")
+            print(f"Error al mostrar el gráfico con Matplotlib: {e}\nIntenando salida ASCII...")
             show_ascii_plot(arr1, arr2, color)

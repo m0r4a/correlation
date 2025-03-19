@@ -9,6 +9,7 @@
    - [Dependencias](#dependencias)
 5. [Instalación y Configuración del Entorno Virtual](#instalación-y-configuración-del-entorno-virtual)
 6. [Uso](#uso)
+7. [Screenshots](#screenshots) 
 7. [Notas Adicionales](#notas-adicionales)
 8. [Contribuciones](#contribuciones)
 
@@ -102,6 +103,26 @@ Al ejecutar el script se realizarán las siguientes acciones:
 - Se mostrará el coeficiente de correlación en una tabla formateada en la terminal utilizando la función `table` (definida en `table.py`).
 
 - Se generará un gráfico de dispersión de los datos utilizando la función `graphic` (definida en `graphic.py`).
+
+## Screenshots
+
+### Gráfico de dispersión: Imagen
+
+<p align="center">
+    <img src="resources/graphic_image.png" alt="Imagen del gráfico de dispersión"/>
+</p>
+
+### Gráfico de dispersión: ASCII
+
+<p align="center">
+    <img src="resources/graphic_ascii.png" alt="Gráfico de dispersión en ASCII"/>
+</p>
+
+### Tabla para el valor r
+
+<p align="center">
+    <img src="resources/table.png" alt="Tabla para el valor r"/>
+</p>
 
 ## Notas adicionales
 
