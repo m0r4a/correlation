@@ -1,7 +1,5 @@
 # Proyecto de Análisis y Visualización de Datos
 
-Este repositorio contiene algunos scripts en Python que permiten calcular la correlación entre dos conjuntos de datos, generar gráficos de dispersión y presentar los resultados en una tabla formateada en la terminal o en un .png.
-
 # Tabla de Contenidos
 
 1. [Descripción](#descripción)
@@ -9,10 +7,14 @@ Este repositorio contiene algunos scripts en Python que permiten calcular la cor
 3. [Archivos principales](#archivos-principales)
 4. [Requisitos](#requisitos)
    - [Dependencias](#dependencias)
-5. [Instalación y Configuración del Entorno Virtual](#instalacion-y-configuracion-del-entorno-virtual)
+5. [Instalación y Configuración del Entorno Virtual](#instalación-y-configuración-del-entorno-virtual)
 6. [Uso](#uso)
 7. [Notas Adicionales](#notas-adicionales)
 8. [Contribuciones](#contribuciones)
+
+## Descripción
+
+Este repositorio contiene algunos scripts en Python que permiten calcular la correlación entre dos conjuntos de datos, generar gráficos de dispersión y presentar los resultados en una tabla formateada en la terminal o en un .png.
 
 ## Funcionalidades
 
@@ -51,10 +53,6 @@ El proyecto utiliza las siguientes librerías:
 - scipy
 - rich
 - plotext (opcional, para salida en ASCII)
-
-## Instalación y configuración del entorno virtual
-
-
 
 ## Instalación y Configuración del Entorno Virtual
 
