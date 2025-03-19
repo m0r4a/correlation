@@ -2,6 +2,18 @@
 
 Este repositorio contiene algunos scripts en Python que permiten calcular la correlación entre dos conjuntos de datos, generar gráficos de dispersión y presentar los resultados en una tabla formateada en la terminal o en un .png.
 
+# Tabla de Contenidos
+
+1. [Descripción](#descripción)
+2. [Funcionalidades](#funcionalidades)
+3. [Archivos principales](#archivos-principales)
+4. [Requisitos](#requisitos)
+   - [Dependencias](#dependencias)
+5. [Instalación y Configuración del Entorno Virtual](#instalacion-y-configuracion-del-entorno-virtual)
+6. [Uso](#uso)
+7. [Notas Adicionales](#notas-adicionales)
+8. [Contribuciones](#contribuciones)
+
 ## Funcionalidades
 
 - **Cálculo de correlación:**
