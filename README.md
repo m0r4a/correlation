@@ -112,16 +112,16 @@ Al ejecutar el script se realizarán las siguientes acciones:
     <img src="resources/table.png" alt="Tabla para el valor r"/>
 </p>
 
-### Gráfico de dispersión: Imagen
-
-<p align="center">
-    <img src="resources/graphic_image.png" alt="Imagen del gráfico de dispersión"/>
-</p>
-
 ### Gráfico de dispersión: ASCII
 
 <p align="center">
     <img src="resources/graphic_ascii.png" alt="Gráfico de dispersión en ASCII"/>
+</p>
+
+### Gráfico de dispersión: Imagen
+
+<p align="center">
+    <img src="resources/graphic_image.png" alt="Imagen del gráfico de dispersión"/>
 </p>
 
 ## Notas adicionales
