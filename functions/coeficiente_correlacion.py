@@ -1,14 +1,14 @@
 import numpy as np
 from scipy import stats
 
-def calcular_coeficiente_correlacion(arr1, arr2, nombre_var_dep="(variable dependiente)", nombre_var_ind="(variable independiente)"):
+def calcular_coeficiente_correlacion(arr1, arr2, nombre_var_ind="(variable independiente)", nombre_var_dep="(variable dependiente)"):
     """
     Calcula la correlación entre dos arreglos usando el método especificado.
 
     Parámetros:
       - arr1, arr2: Arreglos (o listas) de datos numéricos.
-      - nombre_var_dep: Es el nombre de la var. dependiente declarada (solo se usa para concluir)
       - nombre_var_ind: Es el nombre de la var. independiente declarada (solo se usa para concluir)
+      - nombre_var_dep: Es el nombre de la var. dependiente declarada (solo se usa para concluir)
 
     Retorna:
       - Una tupla (coeficiente, conclusión) según la función estadística correspondiente.

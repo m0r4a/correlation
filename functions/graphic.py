@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import warnings
 
-def show_ascii_plot(x_arr, y_arr, color):
+def show_ascii_plot(x_arr, y_arr, nombre_var_ind, nombre_var_dep, titulo_diagrama, color):
     """
     Muestra un gráfico de dispersión en la terminal usando plotext.
 
@@ -15,17 +15,17 @@ def show_ascii_plot(x_arr, y_arr, color):
         import plotext as plt_ascii
         x, y = x_arr.tolist(), y_arr.tolist()
         plt_ascii.scatter(x, y, color=color, marker='hd')
-        plt_ascii.title("Gráfico de dispersión")
+        plt_ascii.title(titulo_diagrama)
         plt_ascii.theme("clear")
         plt_ascii.plot_size(180, 40)
-        plt_ascii.xlabel('Eje X')
-        plt_ascii.ylabel('Eje Y')
+        plt_ascii.xlabel(nombre_var_ind)
+        plt_ascii.ylabel(nombre_var_dep)
         plt_ascii.show()
     except ImportError:
         print("Para la salida ASCII, instala plotext: pip install plotext")
 
 
-def graphic(x_arr, y_arr, color="mediumslateblue", save_path=None, ascii_output=False):
+def graphic(x_arr, y_arr, nombre_var_ind="Eje X", nombre_var_dep="Eje Y", titulo_diagrama="Diagrama de dispersión", color="mediumslateblue", save_path="./diagrama_dispersion.png", ascii_output=False):
     """
     Crea un diagrama de dispersión comparando dos arreglos numéricos.
 
@@ -38,21 +38,22 @@ def graphic(x_arr, y_arr, color="mediumslateblue", save_path=None, ascii_output=
     # Esta List Comprehension itera sobre ambos arreglos y verifica si alguno
     # no es un numpy array; en ese caso, lo convierte.
     x_arr, y_arr = (np.array(a) if not isinstance(a, np.ndarray) else a for a in (x_arr, y_arr))
+    nombre_var_ind, nombre_var_dep = (str(a) if not type(a) == str else a for a in (nombre_var_ind, nombre_var_dep))
 
     if ascii_output:
-        show_ascii_plot(x_arr, y_arr, color)
+        show_ascii_plot(x_arr, y_arr, nombre_var_ind, nombre_var_dep, titulo_diagrama, color)
         return
 
     # Se fuerza el uso del estilo 'dark_background' para darkmode,
     # ignorando cualquier otro estilo que se pase en kwargs.
-    plt.style.use('dark_background')
+    plt.style.use('ggplot')
 
     plt.figure(figsize=(10, 5))
     plt.scatter(x_arr, y_arr, color=color, label="Datos")
 
-    plt.title("Gráfico de dispersión")
-    plt.xlabel('Eje X')
-    plt.ylabel('Eje Y')
+    plt.title(titulo_diagrama)
+    plt.xlabel(nombre_var_ind)
+    plt.ylabel(nombre_var_dep)
     plt.grid(True)
     plt.legend()
 
@@ -66,4 +67,4 @@ def graphic(x_arr, y_arr, color="mediumslateblue", save_path=None, ascii_output=
                 plt.show()
         except UserWarning as e:
             print(f"Error al mostrar el gráfico con Matplotlib: {e}\nIntenando salida ASCII...")
-            show_ascii_plot(x_arr, y_arr, color)
+            show_ascii_plot(x_arr, y_arr, nombre_var_ind, nombre_var_dep, titulo_diagrama, color)

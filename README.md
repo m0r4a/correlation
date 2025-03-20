@@ -102,7 +102,7 @@ Al ejecutar el script se realizarán las siguientes acciones:
 
 - Se mostrará el coeficiente de correlación y su conclusión en una tabla formateada en la terminal utilizando la función `table` (definida en `table.py`).
 
-- Se generará un gráfico de dispersión de los datos utilizando la función `graphic` (definida en `graphic.py`).
+- Se generará un gráfico de dispersión de los datos utilizando la función `graphic`,(definida en `graphic.py`) con el nombre por defecto `diagrama_dispersion.png`.
 
 ## Screenshots
 
