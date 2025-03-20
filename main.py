@@ -3,16 +3,16 @@ from table import table
 from coeficiente_correlacion import calcular_coeficiente_correlacion
 from graphic import graphic
 
-# Define tus datos aquí (reemplaza los [...] con tus datos)
-x_arr = nparr([...])
-y_arr = nparr([...])
-
 # Arreglos de prueba
 x_arr = nparr([10, 12, 8, 17, 10, 15, 10, 14, 19, 10, 11, 13, 16, 10, 12])
 y_arr = nparr([15, 17, 13, 23, 16, 21, 14, 20, 24, 17, 16, 18, 23, 15, 16])
 
+# Variables de prueba
+var_dep = "cantidad de pasajeros"
+var_ind = "cantidad gastada en publicidad"
 
-r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr)
+r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_dep, var_ind)
+
 table("Pearson r value", r, conclusion)
 graphic(x_arr, y_arr, save_path="./diagrama_dispersion.png")
 

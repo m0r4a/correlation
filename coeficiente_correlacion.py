@@ -20,17 +20,17 @@ def calcular_coeficiente_correlacion(arr1, arr2, nombre_var_dep="(variable depen
 
     match r:
         case _ if 0.5 < r < 1:
-            conclusion = f"Como 0.5 < r < 1 entonces la correlación entre {nombre_var_dep} y {nombre_var_ind} se considera fuerte y positiva."
+            conclusion = f"Como 0.5 < r < 1 entonces la correlación entre {nombre_var_dep} y el/la {nombre_var_ind} se considera fuerte y positiva."
         case 0.5:
-            conclusion = f"Como r = 0.5 entonces la correlación entre {nombre_var_dep} y {nombre_var_ind} se considera moderada y positiva."
+            conclusion = f"Como r = 0.5 entonces la correlación entre {nombre_var_dep} y el/la {nombre_var_ind} se considera moderada y positiva."
         case _ if 0 < r < 0.5:
-            conclusion = f"Como 0 < r < 0.5 entonces la correlación entre {nombre_var_dep} y {nombre_var_ind} se considera débil y positiva."
+            conclusion = f"Como 0 < r < 0.5 entonces la correlación entre {nombre_var_dep} y el/la {nombre_var_ind} se considera débil y positiva."
         case _ if -1 < r < -0.5:
-            conclusion = f"Como -1 < r < -0.5 entonces la correlación entre {nombre_var_dep} y {nombre_var_ind} se considera fuerte y negativa."
+            conclusion = f"Como -1 < r < -0.5 entonces la correlación entre {nombre_var_dep} y el/la {nombre_var_ind} se considera fuerte y negativa."
         case -0.5:
-            conclusion = f"Como r = -0.5 entonces la correlación entre {nombre_var_dep} y {nombre_var_ind} se considera moderada y negativa."
+            conclusion = f"Como r = -0.5 entonces la correlación entre {nombre_var_dep} y el/la {nombre_var_ind} se considera moderada y negativa."
         case _ if -0.5 < r < 0:
-            conclusion = f"Como -0.5 < r < 0 entonces la correlación entre {nombre_var_dep} y {nombre_var_ind} se considera débil y negativa."
+            conclusion = f"Como -0.5 < r < 0 entonces la correlación entre {nombre_var_dep} y el/la {nombre_var_ind} se considera débil y negativa."
         case 0:
             conclusion = f"Como r = 0 entonces la correlación es inexistente"
         case _:

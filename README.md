@@ -20,10 +20,8 @@ Este repositorio contiene algunos scripts en Python que permiten calcular la cor
 ## Funcionalidades
 
 - **Cálculo de correlación:**
-  Permite calcular la correlación entre dos conjuntos de datos utilizando tres métodos:
+  Ahora solo permite calcular la correlación mediante Pearson.
   - **Pearson:** Para datos continuos y normalmente distribuidos.
-  - **Spearman:** Para datos que no siguen una distribución normal o cuando la relación no es lineal.
-  - **Kendall tau:** Ideal para datos ordinales.
 
 - **Visualización de datos:**
   - **Gráficos con Matplotlib:** Genera gráficos de dispersión con estilo `dark_background`.
@@ -36,11 +34,11 @@ Este repositorio contiene algunos scripts en Python que permiten calcular la cor
 
 - **main.py:** Script principal que integra la lectura de datos, generación de gráficos, cálculo de correlación y visualización de resultados en una tabla.
 
-- **correlation_func.py:** Implementa la función para calcular la correlación entre dos arreglos usando los métodos de Pearson, Spearman o Kendall.
+- **coeficiente_correlacion.py:** Implementa la función para calcular la correlación entre dos arreglos usando el método de Pearson.
 
 - **graphic.py:** Contiene funciones para crear gráficos de dispersión tanto en formato gráfico como en ASCII.
 
-- **table.py:** Incluye la función para mostrar resultados en una tabla formateada en la terminal usando `rich`.
+- **table.py:** Incluye la función para mostrar resultados y conclusión del coeficiente en una tabla formateada en la terminal usando `rich`.
 
 ## Requisitos
 
@@ -98,9 +96,9 @@ python main.py
 
 Al ejecutar el script se realizarán las siguientes acciones:
 
-- Se calculará la correlación entre los datos mediante la función `correlation` (definida en `correlation_func.py`).
+- Se calculará la correlación entre los datos mediante la función `calcular_coeficiente_correlacion` (definia en `coeficiente_correlacion.py`).
 
-- Se mostrará el coeficiente de correlación en una tabla formateada en la terminal utilizando la función `table` (definida en `table.py`).
+- Se mostrará el coeficiente de correlación y su conclusión en una tabla formateada en la terminal utilizando la función `table` (definida en `table.py`).
 
 - Se generará un gráfico de dispersión de los datos utilizando la función `graphic` (definida en `graphic.py`).
 
