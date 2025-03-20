@@ -88,6 +88,8 @@ pip install -r requirements.txt
 
 En el archivo main.py se definen dos arreglos de datos (arr1 para X y arr2 para Y). Puedes reemplazar los valores de ejemplo con tus propios datos.
 
+Opcionalmente le puedes pasar el nombre de las variables que hayas declarado a la función de calcular la correlación para que te de una mejor conclusión.
+
 Ejecutar el script principal:
 
 ```bash
