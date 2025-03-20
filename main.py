@@ -1,7 +1,7 @@
 from numpy import array as nparr
-from table import table
-from coeficiente_correlacion import calcular_coeficiente_correlacion
-from graphic import graphic
+from functions.table import table
+from functions.graphic import graphic
+from functions.coeficiente_correlacion import calcular_coeficiente_correlacion
 
 # Arreglos de prueba
 x_arr = nparr([10, 12, 8, 17, 10, 15, 10, 14, 19, 10, 11, 13, 16, 10, 12])
