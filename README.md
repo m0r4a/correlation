@@ -106,6 +106,12 @@ Al ejecutar el script se realizarán las siguientes acciones:
 
 ## Screenshots
 
+### Tabla para el valor r
+
+<p align="center">
+    <img src="resources/table.png" alt="Tabla para el valor r"/>
+</p>
+
 ### Gráfico de dispersión: Imagen
 
 <p align="center">
@@ -116,12 +122,6 @@ Al ejecutar el script se realizarán las siguientes acciones:
 
 <p align="center">
     <img src="resources/graphic_ascii.png" alt="Gráfico de dispersión en ASCII"/>
-</p>
-
-### Tabla para el valor r
-
-<p align="center">
-    <img src="resources/table.png" alt="Tabla para el valor r"/>
 </p>
 
 ## Notas adicionales
