@@ -36,4 +36,4 @@ def calcular_coeficiente_correlacion(arr1, arr2, nombre_var_ind="(variable indep
         case _:
             conclusion = "El valor de r no está en el rango esperado (-1, 1)."
 
-    return (r, conclusion)
+    return (f"r = {str(r)}", conclusion)
