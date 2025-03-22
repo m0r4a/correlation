@@ -12,9 +12,9 @@ x_arr = nparr([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])            # número de horas
 y_arr = nparr([50, 55, 65, 70, 80, 85, 90, 92, 95, 97])   # calificaciones
 
 # Variables
-var_ind = "Número de Horas dedicadas a estudiar"
-var_dep = "Calificación en un Examen"
-titulo_diagrama = "Diagrama de dispersión de la Calificación en un Examen vs el Número de horas dedicadas a estudiar"
+var_ind = "Número de horas dedicadas a estudiar"
+var_dep = "Calificación en un examen"
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 

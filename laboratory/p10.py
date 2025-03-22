@@ -8,12 +8,12 @@ from table import table
 from graphic import graphic
 from coeficiente_correlacion import calcular_coeficiente_correlacion
 
-x_arr = nparr([20, 22, 25, 27, 30, 32, 35, 37, 40,  42, 45, 47, 50, 52, 55, 57])  # edad de la persona
-y_arr = nparr([180, 185, 195, 200, 210, 220, 230, 240, 255, 270, 290, 310, 330, 350, 370, 390]) # tiempo de reacción
+x_arr = nparr([5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80])   # kilómetros recorridos
+y_arr = nparr([28, 27.5, 27, 26.5, 26, 25.5, 25, 24.5, 24, 23.5, 23, 22.5, 22, 21.5, 21, 20.5])   # tiempo promedio
 
 # Variables
-var_ind = "Edad de la persona (años)"
-var_dep = "Tiempo de reacción (ms)"
+var_ind = "Kilómetros semanales recorridos"
+var_dep = "Tiempo promedio (mins)"
 titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)

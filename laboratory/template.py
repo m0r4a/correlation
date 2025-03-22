@@ -14,7 +14,7 @@ y_arr = nparr([])   # variable dependiente
 # Variables
 var_ind = ""
 var_dep = ""
-titulo_diagrama = "Diagrama de dispersión "
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 

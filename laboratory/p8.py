@@ -14,7 +14,7 @@ y_arr = nparr([100, 250, 400, 600, 850, 1100, 1400, 1750, 2150, 2600])   # segui
 # Variables
 var_ind = "Número de Publicaciones"
 var_dep = "Cantidad de Seguidores Obtenidos"
-titulo_diagrama = "Diagrama de dispersión de la cantidad de Seguidores Obtenidos vs el Número de Publicaciones"
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 

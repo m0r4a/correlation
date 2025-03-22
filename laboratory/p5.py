@@ -12,9 +12,9 @@ x_arr = nparr([50, 100, 150, 200, 250, 300, 350, 400, 450, 500])   # distancia r
 y_arr = nparr([5, 10, 15, 20, 25, 30, 35, 40, 45, 50])   # combustible consumido
 
 # Variables
-var_ind = "Distancia Recorrida (km)"
-var_dep = "Combustible Consumido (litros)"
-titulo_diagrama = "Diagrama de dispersión del Combustible Consumido (litros) vs la Distancia recorrida (km)"
+var_ind = "Distancia recorrida (km)"
+var_dep = "Combustible consumido (litros)"
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 

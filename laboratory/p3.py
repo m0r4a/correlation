@@ -14,7 +14,7 @@ y_arr = nparr([50, 55, 60, 65, 70, 75, 80, 85, 90, 95])   # peso de las personas
 # Variables
 var_ind = "Altura de las personas (cm)"
 var_dep = "Peso de las personas (kg)"
-titulo_diagrama = "Diagrama de dispersión de la Altura de las personas (cm) vs el Peso de las personas (kg)"
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 

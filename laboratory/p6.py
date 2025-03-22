@@ -12,9 +12,9 @@ x_arr = nparr([5, 10, 15, 20, 25, 30, 35, 40, 45, 50])   # cantidad de empleados
 y_arr = nparr([100, 200, 290, 370, 450, 530, 600, 670, 740, 800])   # producción mensual
 
 # Variables
-var_ind = "Cantidad de Empleados"
-var_dep = "Producción Mensual de una Fábrica"
-titulo_diagrama = "Diagrama de dispersión de la Producción Mensual de una Fábrica vs la Cantidad de Empleados"
+var_ind = "Cantidad de empleados"
+var_dep = "Producción mensual de una fábrica"
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 

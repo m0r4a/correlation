@@ -14,7 +14,7 @@ y_arr = nparr([50, 100, 160, 220, 290, 360, 450, 540, 630, 720, 810, 900, 1000, 
 # Variables
 var_ind = "Dinero Invertido en Publicidad"
 var_dep = "Ventas Mensuales"
-titulo_diagrama = "Diagrama de dispersión de las Ventas mensuales vs el Dinero Invertido en Publicidad"
+titulo_diagrama = f"Diagrama de dispersión\n{var_dep} vs {var_ind}"
 
 r, conclusion = calcular_coeficiente_correlacion(x_arr, y_arr, var_ind, var_dep)
 
