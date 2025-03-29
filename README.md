@@ -24,7 +24,7 @@ Este repositorio contiene algunos scripts en Python que permiten calcular la cor
   - **Pearson:** Para datos continuos y normalmente distribuidos.
 
 - **Visualización de datos:**
-  - **Gráficos con Matplotlib:** Genera gráficos de dispersión con estilo `dark_background`.
+  - **Gráficos con Matplotlib:** Genera gráficos de dispersión con estilo `ggplot`.
   - **Salida ASCII (opcional):** Muestra el gráfico en la terminal utilizando `plotext` si se activa la opción correspondiente.
 
 - **Presentación de resultados:**
